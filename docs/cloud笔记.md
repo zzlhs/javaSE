@@ -1,7 +1,38 @@
+
+----------------------------
+@Configuration 
+@Bean
+----------------------------
+@RestController
+@Autowired
+@RequestMapping(value="/consumer/dept/add")
+----------------------------
+@EnableEurekaServer
+@EnableEurekaClient
+及yml中的配置
+----------------------------
+@LoadBalanced // ribbon 负载均衡
+
+----------------------------
+
+
 ## 1 Eureka ---> 可以去github上看看
 
- 遵循AP原则
-	CAP
+ 1.1 遵循AP原则
+	NoSql --> cp 
+	传统的关系型数据库 --> ca
+	Eureka ap
+	Zookeeper cp
+	C --> Consistency 强一致性
+	A --> Availablity 高可用性
+	P --> Partition tolerance 分区容错性
+	
+ 1.2 Eureka采用了CS的设计架构。EnrekaServer作为服务注册功能的服务器，他是服务注册中心
+	 
+	 Eureka的客户端连接到Eureka Server并维持心跳。
+ 
+ 1.3 Eureka的架构 
+	
 
 
  主管服务的注册与发现
@@ -10,7 +41,7 @@
 	某时刻某一个微服务不可用了，enreka不会立刻清理，依旧会对该微服务的
  信息进行保存
 	
-
+ 
 ## 2 Ribbon负载均衡
 
 ### Load Balance
@@ -33,7 +64,7 @@
 	IRule
 	
 	#### 相关注解
-		@RibbonClient
+		@RibbonClient 
 		@LoadBalance
 
 ## 3 Feign负载均衡
@@ -64,8 +95,31 @@ com.netflix.client.ClientException: Load balancer does not have available server
 
 ### 题外话1 *****************************************************
 	Eureka 和Zookeeper区别？各自有什么优缺点？
+	
+	Eureka 采用的ap
+	
+	zookeeper cp 在选举时会导致服务的不可用
+	
+	出现网络故障
+	1 Eureka不再从注册列表中移除因为长时间没收到心跳而应该过期的服务
+	2 Eureka仍然能够接口新服务的注册和查询请求，但是不会被同步到其他节点上（既保证当前节点可用）
+	3 当网络恢复后，再同步到其他节点
 
 ### 题外话2 *****************************************************
 	springcloud和dubbo之间的区别？ 优缺点？
+	cp ap
+	
+	
+### 题外话3 *****************************************************
+
+	controller上的注释 当为post请求时 
+	
+### 
+	ContentType: x-www-form-urlencoded
+				 form-data
+
+	
+
+
 	
 

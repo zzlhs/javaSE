@@ -31,3 +31,5 @@
 	1 Pull is not possible because you have unmerged files
 	https://blog.csdn.net/zxsted/article/details/17022665
 	
+	
+	cn.com.agree.ab.a4.client.ads.update.prt.oki_4.0.0.qualifier [33]
