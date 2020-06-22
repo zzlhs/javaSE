@@ -1,7 +1,8 @@
 ## RabbitMQ 介绍
 
 ### 1 基本结构
-![Image text](https://raw.githubusercontent.com/hongmaju/light7Local/master/img/productShow/20170518152848.png)
+![Image text](https://github.com/zhengyuanfeng521/javaSE/blob/master/%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97/RabbitMQ/images/rabbitMQ%E5%9F%BA%E6%9C%AC%E7%BB%93%E6%9E%84.png)
+
 
 Broker 消息队列服务进程，包括Exchange和Queue
 Exchange 消息队列交换机，按一定的规则将消息路由转发到某个队列，对消息进行过滤

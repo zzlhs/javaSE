@@ -20,7 +20,7 @@ mongod --dbpath D:/developer/MongoDB/Server/3.4/data
 
 	mongodb://[username:password@]host1[:port1][,host2[:port2],...[,hostN[:portN]]][/[database][? options]] 
 	
-	![Image text](https://raw.githubusercontent.com/hongmaju/light7Local/master/img/productShow/20170518152848.png)
+	![Image text](https://github.com/zhengyuanfeng521/javaSE/blob/master/%E7%BC%93%E5%AD%98%E2%80%94%E2%80%94%E5%B9%B6%E5%8F%91%E7%9A%84%E4%BF%9D%E9%9A%9C/MongoDB/images/mongoDB%26springBoot.png)
 #### 3.2 与springBoot连用
 
 maven坐标
@@ -55,6 +55,8 @@ dao层代码编写
 	在GridFS存储文件是将文件分块存储，文件会按照256KB的大小分割成多个块进行存储，GridFS使用两个集合 （collection）
 存储文件，一个集合是chunks, 用于存储文件的二进制数据；一个集合是ﬁles，用于存储文件的元数 据信息（文件名称、块大
 小、上传时间等信息）
+
+http://localhost:31001/cms/config/getmodel/5a791725dd573c3574ee333f
 
 
 	
