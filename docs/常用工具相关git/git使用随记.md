@@ -26,6 +26,19 @@
 	最后再git pull origin master 一下，确保远程的全部拉下来，有的你刚提交完有人又提交了，你再拉一下会避免比的不是最新的
 
 
+原因
+两人同时fetch了一个分支。 第一个人修改后提交，第二个人提交就失败。
+
+解决方法
+1.强制推送
+$ git push -f
+可以提交，会将remote上第一个人的改动冲掉，比较暴力，不太好。
+
+2.正常解决
+先 git fetch origin 然后git merge origin/master, 和本地分支合并, 之后再push。
+
+
+
 ## 下面记录一下我在开发中遇到的问题
 
 	1 Pull is not possible because you have unmerged files
