@@ -20,7 +20,7 @@ mongod --dbpath D:/developer/MongoDB/Server/3.4/data
 
 	mongodb://[username:password@]host1[:port1][,host2[:port2],...[,hostN[:portN]]][/[database][? options]] 
 	
-	![Image text](https://github.com/zhengyuanfeng521/javaSE/blob/master/%E7%BC%93%E5%AD%98%E2%80%94%E2%80%94%E5%B9%B6%E5%8F%91%E7%9A%84%E4%BF%9D%E9%9A%9C/MongoDB/images/mongoDB%26springBoot.png)
+![Image text](https://github.com/zhengyuanfeng521/javaSE/blob/master/%E7%BC%93%E5%AD%98%E2%80%94%E2%80%94%E5%B9%B6%E5%8F%91%E7%9A%84%E4%BF%9D%E9%9A%9C/MongoDB/images/mongoDB%26springBoot.png)
 #### 3.2 与springBoot连用
 
 maven坐标
@@ -30,6 +30,12 @@ maven坐标
             <artifactId>spring-boot-starter-data-mongodb</artifactId>
         </dependency>
 ```
+
+相关注解
+@Document(collection = "document_name") 
+@Id
+@Field("d_name")
+
 dao层代码编写
 	一般用到的方法MongoRepository都为我们实现好了，和JPA的调用方式大体相似，下面一些我们常用的方法也可以自己去实现
 ```
