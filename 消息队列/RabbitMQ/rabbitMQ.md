@@ -12,6 +12,7 @@ Consumer 接收MQ转发的消息
 
 ### 2 工作模式（5种）
 
+
 1 Work queues  
 2 Publish/Subscribe    
 3 Routing  
@@ -19,9 +20,14 @@ Consumer 接收MQ转发的消息
 5 Header  
 6 RPC  
 
+
+#### 附加一种使用方式
+1 RPC
+
+
 #### 第一种 work queues模式
 
-这种模式一个队列可以对应多个consumer，rabbitMQ这里会以轮询的方式平均将消息发送给consumer
+这种模式一个队列可以对应多个consumer，rabbitMQ这里会以轮询的方式平均将消息发送给consumer  
 
 #### 第二种 发布/订阅
 
