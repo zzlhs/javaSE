@@ -39,7 +39,7 @@ Consumer 接收MQ转发的消息
 生产者将消息发给broker，由交换机根据routingKey将消息发送到绑定的哪个队列去  
 
 #### 第五种 Header模式
-
+header  
 
 header模式与routing不同的地方在于，header模式取消routingkey，使用header中的 key/value（键值对）匹配 队列  
 
