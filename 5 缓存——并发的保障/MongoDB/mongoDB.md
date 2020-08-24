@@ -5,6 +5,8 @@
 	用studio3t做为可视化软件
 	
 ### 2 基础概念
+
+#### 2.1 层次概念
 	database
 	collection
 	document
@@ -12,7 +14,16 @@
 	index
 	primary key (MongoDB自动再每个集合中添加_id的主键)
 
-mongod --dbpath D:/developer/MongoDB/Server/3.4/data
+#### 2.2 常用命令
+
+mongod --dbpath D:/developer/MongoDB/Server/3.4/data  
+
+| 命令格式 | 作用 |
+| -------- | ---- |
+| db.collection_name.find() | 查询collection_name中的内容 |
+| db.getCollection("collection_name").find() | 与上一条一致 |
+| db.collection_name.insert(docment) | 插入数据 |
+
 
 ### 3 springBoot连接mongoDB
 
