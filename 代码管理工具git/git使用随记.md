@@ -1,4 +1,8 @@
 
+## git 命令行中显示修改内容
+
+https://www.cnblogs.com/grimm/p/5525755.html
+
 ## git 命令行显示中文
 
 ,\
@@ -56,5 +60,11 @@ tabfold stact
 
 ## 下面记录一下我在开发中遇到的问题
 
-	1 Pull is not possible because you have unmerged files
-	https://blog.csdn.net/zxsted/article/details/17022665
+### 1 Pull is not possible because you have unmerged files
+
+https://blog.csdn.net/zxsted/article/details/17022665  
+
+### rebase的使用场景
+
+有时在提交时会出现最后一步push失败的情况，之所以会出现这个时因为别人在你之前push了新代码，而你没有同步他人的更新，所以这里有一种方式时rebase的方式可以使用，
+还有一种就是直接在push不成功后再pull然后最后再push，这样会再记录中多出一个节点，所以一般情况不这样做，都会选择用rebase
